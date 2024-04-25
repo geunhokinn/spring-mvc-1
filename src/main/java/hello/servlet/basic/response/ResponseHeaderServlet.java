@@ -30,8 +30,8 @@ public class ResponseHeaderServlet extends HttpServlet {
 //        redirect(response);
 
         PrintWriter writer = response.getWriter();
-        writer.write("ok");
-
+//        writer.write("ok");
+        writer.println("ok"); // 도 가능
     }
 
     private void content(HttpServletResponse response) {
